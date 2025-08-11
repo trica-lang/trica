@@ -1,0 +1,10 @@
+include <stdio.h>
+
+Main {
+    Print "Hello, World!"
+    Print "Trica is ultra-fast!"
+    
+    // Test Print.output feature
+    output = Print.output
+    Print "Last output was: " + output
+}

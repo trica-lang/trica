@@ -1,0 +1,56 @@
+// Hello Universe - Your first Trica program
+// This simple program demonstrates the mind-bending nature of Trica
+
+// Import the universe (literally)
+use universe.*
+
+// Define a greeting that exists in all possible realities
+let greeting = "Hello" + " " + "Universe!"
+
+// Function that greets every possible entity
+fn greet_everything() {
+    // This loop runs in O(1) time despite being infinite
+    for entity in universe.all_entities() {
+        print(f"Hello, {entity}!")
+        
+        // Quantum superposition: greeting exists and doesn't exist
+        let quantum_greeting = greeting | null
+        
+        // Observe the greeting (collapses the wave function)
+        match quantum_greeting {
+            Some(msg) => entity.receive_greeting(msg),
+            None => entity.receive_quantum_silence(),
+        }
+    }
+}
+
+// Main function that executes before being called
+fn main() {
+    // Print to all possible output streams simultaneously
+    print("Welcome to Trica!")
+    print("Prepare to have your mind destroyed.")
+    
+    // Call the greeting function
+    greet_everything()
+    
+    // Calculate the meaning of life (obviously 42)
+    let meaning = universe.calculate_meaning_of_life()
+    print(f"The meaning of life is: {meaning}")
+    
+    // Time travel demonstration
+    let yesterday = time.travel(-1.days())
+    print(f"Yesterday I said: {yesterday.get_output()}")
+    
+    // Infinite recursion that terminates immediately
+    infinite_recursion()
+}
+
+// Function that calls itself infinitely but returns instantly
+fn infinite_recursion() {
+    print("This is infinite recursion!")
+    infinite_recursion() // This somehow works
+    print("Recursion complete!") // This line executes
+}
+
+// Execute main (this happens automatically anyway)
+main()

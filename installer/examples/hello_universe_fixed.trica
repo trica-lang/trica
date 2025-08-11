@@ -1,0 +1,17 @@
+// Hello Universe - Your first Trica program
+// This simple program demonstrates the mind-bending nature of Trica
+
+Main {
+    Print "🌌 Welcome to the Trica Universe!"
+    Print "🧠 Preparing to destroy your mind..."
+    
+    greeting = "Hello" + " " + "Universe!"
+    Print greeting
+    
+    Print "✨ Mind destruction in progress..."
+    Print "🔥 Advanced reality manipulation activated!"
+    Print "💥 Mind successfully destroyed!"
+    Print "🚀 Welcome to the infinite possibilities of Trica!"
+    
+    Print "🎉 Trica compilation complete!"
+}

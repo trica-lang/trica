@@ -1,0 +1,39 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="secondaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="96" cy="96" r="88" fill="url(#primaryGradient)" opacity="0.1"/>
+  
+  <!-- Main T shape -->
+  <path d="M48 64 L144 64 L144 80 L104 80 L104 144 L88 144 L88 80 L48 80 Z" fill="url(#primaryGradient)"/>
+  
+  <!-- Decorative elements representing complexity -->
+  <circle cx="96" cy="96" r="4" fill="url(#secondaryGradient)"/>
+  <circle cx="76" cy="76" r="2" fill="url(#accentGradient)" opacity="0.8"/>
+  <circle cx="116" cy="76" r="2" fill="url(#accentGradient)" opacity="0.8"/>
+  <circle cx="76" cy="116" r="2" fill="url(#secondaryGradient)" opacity="0.6"/>
+  <circle cx="116" cy="116" r="2" fill="url(#secondaryGradient)" opacity="0.6"/>
+  
+  <!-- Abstract complexity lines -->
+  <path d="M64 48 Q96 32 128 48" stroke="url(#secondaryGradient)" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M64 144 Q96 160 128 144" stroke="url(#accentGradient)" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Corner accents -->
+  <path d="M32 32 L40 32 L40 40" stroke="url(#primaryGradient)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 32 L152 32 L152 40" stroke="url(#primaryGradient)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M32 160 L40 160 L40 152" stroke="url(#primaryGradient)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 160 L152 160 L152 152" stroke="url(#primaryGradient)" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

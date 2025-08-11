@@ -1,0 +1,22 @@
+include <stdio.h>
+import user.input as input
+
+Main {
+    // Basic printing
+    Print "Welcome to Trica - The Mind-Bending Language!"
+    
+    // String concatenation
+    greeting = "Hello" + " " + "World"
+    Print greeting
+    
+    // Numbers and arithmetic (when implemented)
+    // result = 42 + 13
+    // Print "The answer is: " + result
+    
+    // Property access
+    last = Print.output
+    Print "Previous output: " + last
+    
+    // This simple syntax hides incredible complexity underneath
+    Print "Deceptively simple, infinitely deep..."
+}

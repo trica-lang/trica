@@ -1,0 +1,67 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="secondaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Background pattern -->
+  <circle cx="200" cy="150" r="100" fill="url(#primaryGradient)" opacity="0.05"/>
+  <circle cx="1000" cy="480" r="120" fill="url(#secondaryGradient)" opacity="0.05"/>
+  <circle cx="900" cy="100" r="80" fill="url(#accentGradient)" opacity="0.05"/>
+  
+  <!-- Main logo -->
+  <g transform="translate(150, 200)">
+    <!-- T shape -->
+    <path d="M0 30 L120 30 L120 50 L70 50 L70 150 L50 150 L50 50 L0 50 Z" fill="url(#primaryGradient)"/>
+    
+    <!-- Decorative elements -->
+    <circle cx="60" cy="90" r="6" fill="url(#secondaryGradient)"/>
+    <circle cx="35" cy="65" r="3" fill="url(#accentGradient)" opacity="0.8"/>
+    <circle cx="85" cy="65" r="3" fill="url(#accentGradient)" opacity="0.8"/>
+    <circle cx="35" cy="115" r="3" fill="url(#secondaryGradient)" opacity="0.6"/>
+    <circle cx="85" cy="115" r="3" fill="url(#secondaryGradient)" opacity="0.6"/>
+    
+    <!-- Abstract complexity lines -->
+    <path d="M20 10 Q60 -10 100 10" stroke="url(#secondaryGradient)" stroke-width="3" fill="none" opacity="0.4"/>
+    <path d="M20 170 Q60 190 100 170" stroke="url(#accentGradient)" stroke-width="3" fill="none" opacity="0.4"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="350" y="280" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="url(#primaryGradient)">Trica</text>
+  
+  <!-- Subtitle -->
+  <text x="350" y="330" font-family="Inter, sans-serif" font-size="32" font-weight="400" fill="#ffffff" opacity="0.8">Ultra-Fast Mind-Bending Programming Language</text>
+  
+  <!-- Description -->
+  <text x="350" y="380" font-family="Inter, sans-serif" font-size="24" font-weight="300" fill="#ffffff" opacity="0.6">Deceptively simple syntax hiding infinite complexity</text>
+  
+  <!-- Stats -->
+  <g transform="translate(350, 420)">
+    <text x="0" y="0" font-family="JetBrains Mono, monospace" font-size="18" font-weight="500" fill="url(#secondaryGradient)">&lt;1μs execution</text>
+    <text x="200" y="0" font-family="JetBrains Mono, monospace" font-size="18" font-weight="500" fill="url(#accentGradient)">∞ complexity</text>
+    <text x="400" y="0" font-family="JetBrains Mono, monospace" font-size="18" font-weight="500" fill="url(#primaryGradient)">Ultra-fast compilation</text>
+  </g>
+  
+  <!-- Corner accents -->
+  <path d="M50 50 L70 50 L70 70" stroke="url(#primaryGradient)" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.3"/>
+  <path d="M1150 50 L1130 50 L1130 70" stroke="url(#primaryGradient)" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.3"/>
+  <path d="M50 580 L70 580 L70 560" stroke="url(#primaryGradient)" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.3"/>
+  <path d="M1150 580 L1130 580 L1130 560" stroke="url(#primaryGradient)" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.3"/>
+</svg>

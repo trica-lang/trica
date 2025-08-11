@@ -1,0 +1,5 @@
+use std.*
+
+main {
+    print("Hello World!")
+}

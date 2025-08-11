@@ -1,0 +1,11 @@
+target/  
+node_modules/  
+dist/  
+.env  
+.pnpm-store/  
+.vite/  
+.netlify/  
+*.log  
+*.lock  
+coverage/  
+*.rs.bk 

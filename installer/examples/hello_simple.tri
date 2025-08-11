@@ -1,0 +1,13 @@
+// Simple Hello World - Basic Trica program
+// Let's start with something that definitely works
+
+// Simple greeting
+let message = "Hello, Trica Universe!"
+
+// Main block - required for all Trica programs
+Main {
+    print("Welcome to Trica!")
+    print("Your mind is about to be destroyed...")
+    print(message)
+    print("Mind destruction complete!")
+}

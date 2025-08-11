@@ -1,0 +1,44 @@
+TRICA PROGRAMMING LANGUAGE LICENSE AGREEMENT
+
+Copyright (c) 2025 Trica Team. All rights reserved.
+
+ULTRA-FAST MIND-BENDING SOFTWARE LICENSE
+
+This software is provided "AS IS" and will absolutely destroy your mind with its infinite complexity hidden behind deceptively simple syntax.
+
+TERMS AND CONDITIONS:
+
+1. MIND-BENDING CLAUSE
+   By installing this software, you acknowledge that your understanding of programming languages will be fundamentally altered. The Trica Team is not responsible for any existential crises, paradigm shifts, or spontaneous enlightenment that may occur.
+
+2. ULTRA-FAST EXECUTION
+   This software executes so fast (<1μs) that it may appear to complete before you even run it. This is not a bug, it's a feature.
+
+3. INFINITE COMPLEXITY
+   While the syntax appears simple, the underlying complexity is mathematically infinite. Do not attempt to fully comprehend all features simultaneously.
+
+4. REDISTRIBUTION
+   You may redistribute this software, but only to individuals who are mentally prepared for mind-bending experiences.
+
+5. MODIFICATION
+   You may modify the source code, but be warned: the code may modify you back.
+
+6. WARRANTY DISCLAIMER
+   This software comes with no warranty, express or implied, except that it WILL work exactly as intended and WILL exceed your expectations.
+
+7. LIMITATION OF LIABILITY
+   The Trica Team shall not be liable for any damages, including but not limited to:
+   - Spontaneous understanding of the universe
+   - Inability to use other programming languages
+   - Compulsive optimization of everything
+   - Temporal paradoxes caused by ultra-fast execution
+
+8. ACCEPTANCE
+   By clicking "I Agree" or installing this software, you accept that your programming life will never be the same.
+
+PREPARE TO HAVE YOUR MIND DESTROYED.
+
+For support and documentation, visit: https://trica.k2lang.org
+
+Trica Team
+2025
