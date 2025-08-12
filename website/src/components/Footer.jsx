@@ -39,6 +39,7 @@ const Footer = () => {
       { name: 'Getting Started', href: '/docs#getting-started' },
       { name: 'Syntax Guide', href: '/docs#syntax' },
       { name: 'Advanced Features', href: '/docs#advanced' },
+      { name: 'API Documentation', href: '/api' },
       { name: 'Compilation', href: '/docs#compilation' }
     ]
   };

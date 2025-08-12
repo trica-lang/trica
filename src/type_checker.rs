@@ -47,7 +47,10 @@ impl TypeChecker {
         }
         
         // Type check main block
-        self.check_main_block(&program.main_block)?;
+        // BLAZING FAST TYPE CHECKING - DIRECT STATEMENTS!
+        for statement in &program.statements {
+            self.check_statement(statement)?;
+        }
         
         Ok(())
     }

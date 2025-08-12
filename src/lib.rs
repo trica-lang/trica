@@ -3,6 +3,7 @@ pub mod parser;
 pub mod ast;
 pub mod type_checker;
 pub mod codegen;
+pub mod bytecode;
 pub mod error;
 
 pub use lexer::Lexer;

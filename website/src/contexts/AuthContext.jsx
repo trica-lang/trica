@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
+import { loginToInkflow } from '../lib/inkflow';
+import { useInkflow } from './InkflowContext';
 
 const AuthContext = createContext({});
 
@@ -15,6 +17,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [session, setSession] = useState(null);
+
 
   useEffect(() => {
     // Get initial session
@@ -92,10 +95,57 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const signInWithInkflow = async () => {
+    try {
+      setLoading(true);
+      
+      // Use the official INKFLOW provider
+      const userId = 'trica_user_' + Date.now();
+      const email = 'user@trica.dev';
+      const displayName = 'TRICA Developer';
+      
+      console.log('Authenticating with INKFLOW...');
+      const inkflowResponse = await loginToInkflow(userId, email, displayName);
+      
+      // Create user object compatible with your auth system
+      const inkflowUser = {
+        id: userId,
+        email: email,
+        user_metadata: {
+          name: displayName,
+          provider: 'inkflow',
+          avatar_url: 'https://inkflow.lovable.app/favicon.ico',
+          full_name: displayName
+        },
+        email_confirmed_at: new Date().toISOString(),
+        provider: 'inkflow'
+      };
+      
+      setUser(inkflowUser);
+      setLoading(false);
+      
+      return { success: true, user: inkflowUser, inkflow: inkflowResponse };
+    } catch (error) {
+      setLoading(false);
+      console.error('Error signing in with INKFLOW:', error);
+      throw error;
+    }
+  };
+
   const signOut = async () => {
     try {
+      // Sign out from Supabase
       const { error } = await supabase.auth.signOut();
-      if (error) throw error;
+      if (error && !user?.provider === 'inkflow') throw error;
+      
+      // Clear INKFLOW session
+      localStorage.removeItem('inkflow_session');
+      
+      // If user signed in with INKFLOW only, clear user state
+      if (user?.provider === 'inkflow') {
+        setUser(null);
+        setSession(null);
+      }
     } catch (error) {
       console.error('Error signing out:', error);
       throw error;
@@ -146,6 +196,7 @@ export const AuthProvider = ({ children }) => {
     signInWithGoogle,
     signInWithGitHub,
     signInWithEmail,
+    signInWithInkflow,
     signOut,
     isVerifiedUser,
     isPremiumUser,

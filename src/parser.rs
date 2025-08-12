@@ -15,12 +15,12 @@ impl Parser {
     pub fn parse(&mut self) -> Result<Program, TricarError> {
         let mut includes = Vec::new();
         let mut imports = Vec::new();
-        let mut main_block = None;
+        let mut statements = Vec::new();
         
         // Skip initial newlines
         self.skip_newlines();
         
-        // Parse includes and imports
+        // BLAZING FAST PARSING - NO MAIN BLOCK REQUIRED!
         while !self.is_at_end() {
             match &self.peek().token_type {
                 TokenType::Include => {
@@ -30,23 +30,26 @@ impl Parser {
                     imports.push(self.parse_import()?);
                 }
                 TokenType::Main => {
-                    main_block = Some(self.parse_main_block()?);
+                    // Legacy support - parse main block but extract statements
+                    let main_block = self.parse_main_block()?;
+                    statements.extend(main_block.statements);
                     break;
                 }
                 TokenType::Newline => {
                     self.advance();
                 }
-                _ => break,
+                TokenType::Eof => break,
+                _ => {
+                    // DIRECT STATEMENT PARSING - ULTRA FAST!
+                    statements.push(self.parse_statement()?);
+                }
             }
         }
-        
-        // Ensure we have a Main block
-        let main_block = main_block.ok_or(TricarError::MissingMainBlock)?;
         
         Ok(Program {
             includes,
             imports,
-            main_block,
+            statements,
         })
     }
     

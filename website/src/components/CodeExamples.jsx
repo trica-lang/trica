@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Code } from 'lucide-react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import InkflowContent from './InkflowContent';
 import './CodeExamples.css';
 
 const CodeExamples = () => {
@@ -235,6 +236,14 @@ int main(void) {
             </div>
           </div>
         </div>
+
+        <InkflowContent 
+          code={examples[activeTab].trica} 
+          title={`TRICA Example: ${examples[activeTab].title}`}
+          onSave={(result) => {
+            console.log('Example saved to INKFLOW:', result);
+          }}
+        />
 
         <div className="examples-footer">
           <div className="complexity-indicator">

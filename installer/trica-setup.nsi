@@ -1,9 +1,9 @@
 ; Trica Programming Language Installer
 ; Ultra-Fast Mind-Bending Programming Language
-; Version 1.0.0 release
+; Version 1.1.7 release - TPKG Package Manager Edition
 
 !define PRODUCT_NAME "Trica"
-!define PRODUCT_VERSION "1.0.0"
+!define PRODUCT_VERSION "1.1.7"
 !define PRODUCT_PUBLISHER "Trica Team"
 !define PRODUCT_WEB_SITE "https://trica.k2lang.org"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\trica.exe"
@@ -25,12 +25,20 @@
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "wizard.bmp"
 
 ; Welcome page
-!define MUI_WELCOMEPAGE_TITLE "Welcome to Trica Setup"
-!define MUI_WELCOMEPAGE_TEXT "This wizard will guide you through the installation of Trica 1.0.0, the ultra-fast mind-bending programming language.$\r$\n$\r$\nNEW IN 1.0.0: Real bytecode VM execution! No more C code - pure Trica bytecode with quantum superposition, time travel, and mind destruction capabilities.$\r$\n$\r$\nClick Next to continue."
+!define MUI_WELCOMEPAGE_TITLE "Welcome to Trica 1.1.7 Setup"
+!define MUI_WELCOMEPAGE_TEXT "This wizard will guide you through the installation of Trica 1.1.7, the ultra-fast mind-bending programming language with TPKG Package Manager.$\r$\n$\r$\nNEW IN 1.1.7: TPKG Package Manager with Supabase integration! Install neural networks, time travel, quantum computing, and mind destruction packages instantly.$\r$\n$\r$\nClick Next to continue."
 !insertmacro MUI_PAGE_WELCOME
 
 ; License page
 !insertmacro MUI_PAGE_LICENSE "license.txt"
+
+; Changelog page
+!define MUI_PAGE_HEADER_TEXT "What's New in Trica 1.1.7"
+!define MUI_PAGE_HEADER_SUBTEXT "TPKG Package Manager Edition - Revolutionary Features"
+!define MUI_LICENSEPAGE_TEXT_TOP "Review the latest features and improvements in Trica 1.1.7:"
+!define MUI_LICENSEPAGE_TEXT_BOTTOM "Click Next to continue with the installation."
+!define MUI_LICENSEPAGE_BUTTON "Next >"
+!insertmacro MUI_PAGE_LICENSE "CHANGELOG.md"
 
 ; Components page
 !insertmacro MUI_PAGE_COMPONENTS
@@ -42,10 +50,10 @@
 !insertmacro MUI_PAGE_INSTFILES
 
 ; Finish page
-!define MUI_FINISHPAGE_RUN "$INSTDIR\trica.exe"
-!define MUI_FINISHPAGE_RUN_TEXT "Launch Trica REPL"
+!define MUI_FINISHPAGE_RUN "$INSTDIR\tpkg.exe"
+!define MUI_FINISHPAGE_RUN_TEXT "Launch TPKG Package Manager"
 !define MUI_FINISHPAGE_SHOWREADME "$INSTDIR\README.md"
-!define MUI_FINISHPAGE_SHOWREADME_TEXT "View Getting Started Guide"
+!define MUI_FINISHPAGE_SHOWREADME_TEXT "View Getting Started Guide (TPKG + Bytecode VM)"
 !define MUI_FINISHPAGE_LINK "Visit Trica Website"
 !define MUI_FINISHPAGE_LINK_LOCATION "${PRODUCT_WEB_SITE}"
 !insertmacro MUI_PAGE_FINISH
@@ -69,9 +77,9 @@ ShowUnInstDetails show
 RequestExecutionLevel admin
 
 ; Version Information
-VIProductVersion "1.0.0.0"
+VIProductVersion "1.1.7.0"
 VIAddVersionKey "ProductName" "${PRODUCT_NAME}"
-VIAddVersionKey "Comments" "Ultra-Fast Mind-Bending Programming Language with Bytecode VM"
+VIAddVersionKey "Comments" "Ultra-Fast Mind-Bending Programming Language with TPKG Package Manager"
 VIAddVersionKey "CompanyName" "${PRODUCT_PUBLISHER}"
 VIAddVersionKey "LegalCopyright" "© 2025 ${PRODUCT_PUBLISHER}"
 VIAddVersionKey "FileDescription" "${PRODUCT_NAME} Installer"
@@ -85,8 +93,9 @@ Section "Trica Core" SEC01
   SetOutPath "$INSTDIR"
   SetOverwrite ifnewer
   
-  ; Main executable
+  ; Main executables
   File "trica.exe"
+  File "tpkg.exe"
   File "trica-compiler.exe"
   File "README.md"
   File "CHANGELOG.md"
@@ -94,6 +103,7 @@ Section "Trica Core" SEC01
   ; Create shortcuts
   CreateDirectory "$SMPROGRAMS\Trica"
   CreateShortCut "$SMPROGRAMS\Trica\Trica REPL.lnk" "$INSTDIR\trica.exe"
+  CreateShortCut "$SMPROGRAMS\Trica\TPKG Package Manager.lnk" "$INSTDIR\tpkg.exe"
   CreateShortCut "$SMPROGRAMS\Trica\Trica Compiler.lnk" "$INSTDIR\trica-compiler.exe"
   CreateShortCut "$SMPROGRAMS\Trica\Uninstall.lnk" "$INSTDIR\uninst.exe"
   CreateShortCut "$DESKTOP\Trica.lnk" "$INSTDIR\trica.exe"
@@ -127,10 +137,10 @@ SectionEnd
 
 ; Section descriptions
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} "Core Trica bytecode compiler and VM runtime (Required)"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "Example programs and comprehensive documentation"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC03} "Visual Studio Code syntax highlighting and IntelliSense"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC04} "Add Trica to system PATH for command-line access"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} "Core Trica 1.1.7 Bytecode VM + TPKG Package Manager (Required)"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "Example programs, TPKG demos, and comprehensive documentation"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC03} "Visual Studio Code syntax highlighting (Future Release)"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC04} "Add Trica and TPKG to system PATH for command-line access"
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 Section -AdditionalIcons
@@ -168,6 +178,7 @@ Section Uninstall
   Delete "$INSTDIR\${PRODUCT_NAME}.url"
   Delete "$INSTDIR\uninst.exe"
   Delete "$INSTDIR\trica.exe"
+  Delete "$INSTDIR\tpkg.exe"
   Delete "$INSTDIR\trica-compiler.exe"
   Delete "$INSTDIR\README.md"
   Delete "$INSTDIR\CHANGELOG.md"
@@ -175,6 +186,7 @@ Section Uninstall
   Delete "$SMPROGRAMS\Trica\Uninstall.lnk"
   Delete "$SMPROGRAMS\Trica\Website.lnk"
   Delete "$SMPROGRAMS\Trica\Trica REPL.lnk"
+  Delete "$SMPROGRAMS\Trica\TPKG Package Manager.lnk"
   Delete "$SMPROGRAMS\Trica\Trica Compiler.lnk"
   Delete "$SMPROGRAMS\Trica\Examples.lnk"
   Delete "$SMPROGRAMS\Trica\Documentation.lnk"

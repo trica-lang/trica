@@ -155,7 +155,7 @@ const AnimatedLanding = ({ onEnter }) => {
         {showButtons && (
           <div className="landing-actions">
             <a 
-              href="/installer/TricaSetup-0.1.0.exe"
+              href="/installer/TricaSetup-1.1.7.exe"
               className="landing-btn primary-btn"
               download
             >

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { X, Github, Chrome, Star, Crown, Zap, Brain, Sparkles, Lock, Mail } from 'lucide-react';
+import { X, Github, Chrome, Star, Crown, Zap, Brain, Sparkles, Lock, Mail, Edit3 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import './AuthModal.css';
 
 const AuthModal = ({ isOpen, onClose }) => {
-  const { signInWithGoogle, signInWithGitHub, signInWithEmail } = useAuth();
+  const { signInWithGoogle, signInWithGitHub, signInWithEmail, signInWithInkflow } = useAuth();
   const [isLoading, setIsLoading] = useState(false);
   const [loadingProvider, setLoadingProvider] = useState(null);
   const [email, setEmail] = useState('');
@@ -58,6 +58,22 @@ const AuthModal = ({ isOpen, onClose }) => {
     } catch (error) {
       console.error('Email sign in error:', error);
       alert('Failed to send magic link. Please try again.');
+    } finally {
+      setIsLoading(false);
+      setLoadingProvider(null);
+    }
+  };
+
+  const handleInkflowSignIn = async () => {
+    try {
+      setIsLoading(true);
+      setLoadingProvider('inkflow');
+      await signInWithInkflow();
+      alert('🎉 Successfully signed in with INKFLOW! Your content will be synced.');
+      onClose();
+    } catch (error) {
+      console.error('INKFLOW OAuth sign in error:', error);
+      alert('Failed to sign in with INKFLOW. Please try again.');
     } finally {
       setIsLoading(false);
       setLoadingProvider(null);
@@ -150,6 +166,24 @@ const AuthModal = ({ isOpen, onClose }) => {
               <div className="btn-glow"></div>
             </button>
 
+            <button 
+              className="auth-btn inkflow-btn"
+              onClick={handleInkflowSignIn}
+              disabled={isLoading}
+              style={{
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                border: '1px solid #667eea'
+              }}
+            >
+              {loadingProvider === 'inkflow' ? (
+                <div className="spinner"></div>
+              ) : (
+                <Edit3 size={20} />
+              )}
+              <span>Continue with INKFLOW</span>
+              <div className="btn-glow"></div>
+            </button>
+
             <div className="auth-divider">
               <span>or</span>
             </div>
@@ -182,6 +216,10 @@ const AuthModal = ({ isOpen, onClose }) => {
                 <div className="btn-glow"></div>
               </button>
             </form>
+
+            <div className="auth-divider">
+              <span>or</span>
+            </div>
           </div>
 
           <div className="auth-benefits">

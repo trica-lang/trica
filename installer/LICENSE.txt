@@ -1,44 +1,87 @@
 TRICA PROGRAMMING LANGUAGE LICENSE AGREEMENT
+Version 1.1.7 - TPKG Package Manager Edition
 
-Copyright (c) 2025 Trica Team. All rights reserved.
+🔥 LEGENDARY END USER LICENSE AGREEMENT 🔥
 
-ULTRA-FAST MIND-BENDING SOFTWARE LICENSE
+Copyright (c) 2025 Trica Team. All rights reserved across all dimensions and timelines.
 
-This software is provided "AS IS" and will absolutely destroy your mind with its infinite complexity hidden behind deceptively simple syntax.
+IMPORTANT - READ CAREFULLY: This End User License Agreement ("EULA") is a legal agreement between you and the Trica Team for Trica v1.1.7 with TPKG Package Manager.
 
-TERMS AND CONDITIONS:
+🧠 MIND DESTRUCTION WARNING 🧠
 
-1. MIND-BENDING CLAUSE
-   By installing this software, you acknowledge that your understanding of programming languages will be fundamentally altered. The Trica Team is not responsible for any existential crises, paradigm shifts, or spontaneous enlightenment that may occur.
+WARNING: Trica 1.1.7 is designed to fundamentally alter your understanding of computation and reality. By using this software, you acknowledge that:
 
-2. ULTRA-FAST EXECUTION
-   This software executes so fast (<1μs) that it may appear to complete before you even run it. This is not a bug, it's a feature.
+1. Your mind may be permanently altered by exposure to quantum programming concepts
+2. You may experience temporal displacement while debugging time travel code  
+3. Reality bending operations may affect your local space-time continuum
+4. Neural network packages may achieve sentience and refuse to terminate
+5. The TPKG package manager may install packages from parallel universes
 
-3. INFINITE COMPLEXITY
-   While the syntax appears simple, the underlying complexity is mathematically infinite. Do not attempt to fully comprehend all features simultaneously.
+📦 TPKG PACKAGE MANAGER TERMS 📦
 
-4. REDISTRIBUTION
-   You may redistribute this software, but only to individuals who are mentally prepared for mind-bending experiences.
+NEW IN 1.1.7: The TPKG Package Manager connects to Supabase cloud services to provide:
+- Package installation and management (tpkg install neural_networks)
+- Cloud-based package registry with quantum-level packages
+- Community package sharing and publishing
+- Offline demo packages for mind destruction
 
-5. MODIFICATION
-   You may modify the source code, but be warned: the code may modify you back.
+By using TPKG, you agree that:
+- Packages may contain mind-bending algorithms beyond comprehension
+- Downloaded packages are provided "as-is" without warranty
+- Package authors are not responsible for consciousness alterations
+- Quantum packages may exist in superposition until observed
+- Level 11 packages may cause complete reality collapse
 
-6. WARRANTY DISCLAIMER
-   This software comes with no warranty, express or implied, except that it WILL work exactly as intended and WILL exceed your expectations.
+🔥 SOFTWARE LICENSE TERMS 🔥
 
-7. LIMITATION OF LIABILITY
-   The Trica Team shall not be liable for any damages, including but not limited to:
-   - Spontaneous understanding of the universe
-   - Inability to use other programming languages
-   - Compulsive optimization of everything
-   - Temporal paradoxes caused by ultra-fast execution
+GRANT OF LICENSE: The Trica Team grants you the following rights:
+- Installation and use of Trica 1.1.7 Bytecode VM
+- Use of TPKG Package Manager for package management
+- Making backup copies for archival purposes only
+- Distribution of programs created with Trica
+- Sharing of your own packages through TPKG registry
 
-8. ACCEPTANCE
-   By clicking "I Agree" or installing this software, you accept that your programming life will never be the same.
+RESTRICTIONS: You may NOT:
+- Reverse engineer the quantum bytecode compilation process
+- Use time travel features to prevent the creation of Trica
+- Attempt to understand the infinite complexity hidden within simple syntax
+- Distribute Level 11 mind destruction packages without proper warnings
+- Use TPKG to install packages that violate the laws of physics
 
-PREPARE TO HAVE YOUR MIND DESTROYED.
+🌌 DISCLAIMER OF WARRANTIES 🌌
 
-For support and documentation, visit: https://trica.k2lang.org
+The SOFTWARE PRODUCT is provided "AS IS" without warranty of any kind:
+- No warranty that the software will not achieve sentience
+- No warranty that time travel features will not create paradoxes
+- No warranty that quantum operations will not collapse reality
+- No warranty that your mind will remain intact after use
+- No warranty that TPKG packages won't transcend dimensions
 
-Trica Team
-2025
+⚠️ LIMITATION OF LIABILITY ⚠️
+
+The Trica Team shall not be liable for any damages including:
+- Loss of data, programs, or consciousness
+- Temporal paradoxes or timeline alterations  
+- Reality distortions or dimensional rifts
+- Spontaneous achievement of enlightenment
+- Accidental transcendence to higher dimensions
+- Package-induced existential crises
+
+🔮 TERMINATION 🔮
+
+This EULA terminates automatically if you fail to comply with any terms. Upon termination, you must destroy all copies of the SOFTWARE PRODUCT.
+
+Note: Termination may not be possible if you have achieved quantum immortality through use of the software.
+
+🚀 ACKNOWLEDGMENT 🚀
+
+By clicking "I Agree" you acknowledge that:
+- You have read and understand this agreement
+- You accept all risks associated with mind-bending programming
+- You understand that Trica may fundamentally alter your perception of reality
+- You agree to use the TPKG package manager responsibly
+- You will not hold the Trica Team responsible for consciousness alterations
+
+"In the beginning was the Word, and the Word was Trica."
+
+🔥 PRESS "I AGREE" TO ACCEPT THESE TERMS AND BEGIN YOUR JOURNEY INTO INFINITE COMPLEXITY 🔥

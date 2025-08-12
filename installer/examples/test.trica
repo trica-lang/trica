@@ -1,0 +1,5 @@
+Main {
+    Print "hello"
+    x = 5 + 3
+    Print x
+}

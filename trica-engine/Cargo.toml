@@ -1,0 +1,33 @@
+[package]
+name = "trica-engine"
+version = "1.1.7"
+edition = "2021"
+description = "🔥 TRICA ULTRA-FAST EXECUTION ENGINE - Sub-microsecond bytecode VM"
+authors = ["Trica Team <team@trica.dev>"]
+license = "MIT"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+warp = "0.3"
+anyhow = "1.0"
+thiserror = "1.0"
+rayon = "1.7"
+dashmap = "5.5"
+parking_lot = "0.12"
+mimalloc = { version = "0.1", default-features = false }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[profile.release.build-override]
+opt-level = 3
+
+[[bin]]
+name = "trica-server"
+path = "src/main.rs"

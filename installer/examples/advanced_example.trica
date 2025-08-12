@@ -1,0 +1,41 @@
+// 🔥 TRICA ADVANCED EXAMPLE - IMPORTS, HEADERS & PACKAGES 🔥
+// This demonstrates the full power of Trica's import system
+
+include <stdio.h>
+include <stdlib.h>
+include <math.h>
+include "trica_quantum.h"
+
+import std.io as IO
+import std.math as Math
+import std.quantum as Quantum
+import tpkg.neural_networks as NN
+import tpkg.time_travel as TimeTravel
+
+Main {
+    Print "🔥 Welcome to ADVANCED TRICA! 🔥"
+    Print "Demonstrating imports, headers, and TPKG packages..."
+    
+    // Basic math with quantum arithmetic
+    x = 10 + 5
+    y = x * 2
+    z = y - 3
+    
+    Print "Basic calculations:"
+    Print "x = 10 + 5 = " + x
+    Print "y = x * 2 = " + y  
+    Print "z = y - 3 = " + z
+    
+    // Advanced operations (would use imported modules)
+    Print ""
+    Print "🧠 MIND-BENDING FEATURES:"
+    Print "✅ C header includes for low-level access"
+    Print "✅ Standard library imports (std.*)"
+    Print "✅ TPKG package manager integration"
+    Print "✅ Quantum arithmetic operations"
+    Print "✅ Neural network capabilities"
+    Print "✅ Time travel functionality"
+    
+    Print ""
+    Print "🚀 Trica: Where simplicity meets INFINITE COMPLEXITY!"
+}

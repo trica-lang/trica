@@ -13,29 +13,20 @@ const TricaMusic = () => {
       audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
     }
 
-    // Start the epic Trica music automatically
-    const startMusic = async () => {
-      try {
-        if (audioContextRef.current.state === 'suspended') {
-          await audioContextRef.current.resume();
-        }
-        playTricaMusic();
-      } catch (error) {
-        console.log('Audio autoplay blocked, waiting for user interaction');
-      }
-    };
-
-    startMusic();
-
     return () => {
       stopMusic();
     };
   }, []);
 
-  const playTricaMusic = () => {
+  const playTricaMusic = async () => {
     if (isPlaying) return;
 
     const ctx = audioContextRef.current;
+    
+    // Resume audio context if suspended (required for user interaction)
+    if (ctx.state === 'suspended') {
+      await ctx.resume();
+    }
     const gainNode = ctx.createGain();
     gainNode.connect(ctx.destination);
     gainNode.gain.value = volume;
@@ -142,11 +133,11 @@ const TricaMusic = () => {
     oscillatorsRef.current = [];
   };
 
-  const toggleMusic = () => {
+  const toggleMusic = async () => {
     if (isPlaying) {
       stopMusic();
     } else {
-      playTricaMusic();
+      await playTricaMusic();
     }
   };
 

@@ -22,81 +22,8 @@ const CommentsReviews = () => {
   const [userIP, setUserIP] = useState(null);
   const [showAuthPrompt, setShowAuthPrompt] = useState(false);
 
-  // Mock initial reviews (these would come from Supabase in real implementation)
-  const initialReviews = [
-    {
-      id: 1,
-      name: "Dr. Alan Turing",
-      rating: 5,
-      title: "My Mind Has Been Physically Destroyed",
-      comment: "I thought I understood computation until I encountered Trica. The deceptively simple syntax hiding infinite algorithmic complexity has literally broken my understanding of programming languages. 10/10 would have mind destroyed again.",
-      date: "2024-01-15",
-      likes: 42,
-      dislikes: 0,
-      mindDestroyed: true,
-      verified: true
-    },
-    {
-      id: 2,
-      name: "Linus Torvalds",
-      rating: 5,
-      title: "Even I'm Confused (And That's Saying Something)",
-      comment: "I've written operating systems, but Trica's <1μs execution time while maintaining infinite complexity is beyond my comprehension. This language defies the laws of computer science. Absolutely mind-bending!",
-      date: "2024-01-14",
-      likes: 38,
-      dislikes: 1,
-      mindDestroyed: true,
-      verified: true
-    },
-    {
-      id: 3,
-      name: "Grace Hopper",
-      rating: 5,
-      title: "Debugging This Would Take Forever",
-      comment: "I invented the first compiler, but Trica's compiler is something else entirely. It generates C code so optimized that it runs faster than the speed of light. My debugging skills are useless here.",
-      date: "2024-01-13",
-      likes: 35,
-      dislikes: 0,
-      mindDestroyed: true,
-      verified: true
-    },
-    {
-      id: 4,
-      name: "Anonymous Programmer",
-      rating: 4,
-      title: "Lost My Job Because of Trica",
-      comment: "I showed Trica to my boss and now he expects all our code to execute in <1μs. I can't explain that Trica is the only language capable of this. Send help.",
-      date: "2024-01-12",
-      likes: 28,
-      dislikes: 3,
-      mindDestroyed: true,
-      verified: false
-    },
-    {
-      id: 5,
-      name: "Quantum Computing Researcher",
-      rating: 5,
-      title: "Makes Quantum Computing Look Simple",
-      comment: "I work with quantum computers daily, but Trica's quantum loops and superposition variables make quantum mechanics look like basic arithmetic. This is next-level programming.",
-      date: "2024-01-11",
-      likes: 31,
-      dislikes: 2,
-      mindDestroyed: true,
-      verified: false
-    },
-    {
-      id: 6,
-      name: "CS Professor",
-      rating: 3,
-      title: "Had to Rewrite My Entire Curriculum",
-      comment: "After discovering Trica, I realized everything I've been teaching about computational complexity is wrong. The students are confused, I'm confused, everyone's confused. But somehow the code still works perfectly.",
-      date: "2024-01-10",
-      likes: 22,
-      dislikes: 8,
-      mindDestroyed: true,
-      verified: false
-    }
-  ];
+  // No fake reviews - only real human reviews from Supabase
+  const initialReviews = [];
 
   // Load reviews from Supabase on component mount
   useEffect(() => {
@@ -383,8 +310,8 @@ const CommentsReviews = () => {
           </h2>
           
           <p className="section-description">
-            Real testimonials from developers whose minds have been 
-            <strong> physically destroyed</strong> by Trica's infinite complexity.
+            <strong>100% AUTHENTIC REVIEWS</strong> from real developers whose minds have been 
+            <strong> physically destroyed</strong> by Trica's infinite complexity. No fake reviews!
           </p>
         </div>
 

@@ -1,0 +1,8 @@
+{
+  "name": "trica-netlify-functions",
+  "version": "1.1.7",
+  "description": "🔥 TRICA Netlify Serverless Functions - API endpoints for the mind-bending programming language",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.54.0"
+  }
+}

@@ -16,10 +16,10 @@ static char* trica_last_output = NULL;
 static size_t trica_last_output_len = 0;
 
 // Pre-computed string literals for maximum performance
-static const char trica_str_0[] = "\x25 Welcome to Trica!";
 static const char trica_str_1[] = "Your mind is about to be destroyed...";
-static const char trica_str_2[] = "\xe0 Mind destruction complete!";
 static const char trica_str_3[] = "\x80 Trica is LEGENDARY!";
+static const char trica_str_0[] = "\x25 Welcome to Trica!";
+static const char trica_str_2[] = "\xe0 Mind destruction complete!";
 
 // Ultra-optimized runtime functions
 TRICA_INLINE void trica_print(const char* TRICA_RESTRICT str) {

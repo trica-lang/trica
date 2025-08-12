@@ -21,20 +21,20 @@ const Download = () => {
       icon: <FaWindows size={24} />,
       downloads: [
         {
-          name: '🔥 TricaSetup-1.0.0.exe (LEGENDARY BYTECODE VM!) 🔥',
-          description: 'NEW! Real bytecode VM execution with quantum superposition, time travel, and mind destruction capabilities',
-          size: '200 KB',
-          url: '/installer/TricaSetup-1.0.0.exe',
+          name: '🔥 TricaSetup-1.1.7.exe (LEGENDARY TPKG PACKAGE MANAGER!) 🔥',
+          description: 'NEW IN 1.1.7! TPKG Package Manager + Bytecode VM with Supabase integration for neural networks, time travel, and quantum computing packages',
+          size: '1.2 MB',
+          url: '/installer/TricaSetup-1.1.7.exe',
           primary: true,
-          features: ['🔥 TRICA BYTECODE VM', '⚛️ Quantum superposition support', '⏰ Time travel capabilities', '🧠 Mind destruction engine', '✅ System PATH integration', '✅ Start Menu shortcuts', '✅ Example programs', '✅ Documentation']
+          features: ['🔥 TRICA BYTECODE VM', '📦 TPKG PACKAGE MANAGER', '🧠 Neural Networks Package', '⏰ Time Travel Package', '⚛️ Quantum Computing Package', '🌐 Supabase Integration', '✅ System PATH integration', '✅ Start Menu shortcuts', '✅ Example programs', '✅ Documentation']
         },
         {
-          name: 'TricaSetup-0.1.0.exe (Legacy C Codegen)',
-          description: 'Previous version with C code generation (deprecated)',
-          size: '74.6 KB',
-          url: '/installer/TricaSetup-0.1.0.exe',
+          name: 'TricaSetup-1.0.0.exe (Legacy Bytecode VM)',
+          description: 'Previous version with bytecode VM only (no TPKG)',
+          size: '200 KB',
+          url: '/installer/TricaSetup-1.0.0.exe',
           primary: false,
-          features: ['⚠️ Legacy C codegen', '✅ Basic functionality', '✅ System integration']
+          features: ['⚠️ Legacy bytecode VM', '✅ Basic functionality', '✅ System integration']
         },
         {
           name: 'Portable Version (Coming Soon)',
@@ -51,11 +51,12 @@ const Download = () => {
         'Modern CPU (any x64 processor)'
       ],
       installation: [
-        '🔥 Download TricaSetup-1.0.0.exe (LEGENDARY BYTECODE VM)',
+        '🔥 Download TricaSetup-1.1.7.exe (LEGENDARY BYTECODE VM + TPKG)',
         'Run the installer (may require admin rights)',
-        'Select components (Bytecode VM Core required, Examples recommended)',
+        'Select components (Bytecode VM + TPKG required, Examples recommended)',
         'Complete installation and experience MIND DESTRUCTION',
         'Type "trica yourfile.trica" to execute bytecode',
+        'Type "tpkg install neural_networks" to install packages',
         '🧠 Watch your mind get DESTROYED by quantum execution!'
       ]
     },
@@ -267,21 +268,22 @@ Main {
             <div className="version-info">
               <h4>Latest Version</h4>
               <div className="version-badge">
-                <span className="version-number">v0.1.0</span>
-                <span className="version-label">Alpha - Mind Destruction Release</span>
+                <span className="version-number">v1.1.7</span>
+                <span className="version-label">TPKG Package Manager Edition</span>
               </div>
               <p className="version-notes">
-                Professional installer with REPL, compiler, examples, and complete system integration. 
-                Prepare to have your mind destroyed by infinite complexity hidden in simple syntax.
+                Revolutionary TPKG Package Manager with Supabase integration + Bytecode VM. 
+                Install neural networks, time travel, and quantum computing packages instantly!
               </p>
               <div className="release-highlights">
-                <h5>🚀 Release Highlights:</h5>
+                <h5>🔥 NEW IN 1.1.7:</h5>
                 <ul>
-                  <li>✅ Ultra-fast execution (&lt;1μs)</li>
-                  <li>✅ Professional NSIS installer</li>
-                  <li>✅ Interactive REPL with help system</li>
-                  <li>✅ Quantum compilation features</li>
-                  <li>✅ Mind-bending example programs</li>
+                  <li>📦 TPKG Package Manager with Supabase cloud registry</li>
+                  <li>🧠 Neural Networks package (Danger Level 8)</li>
+                  <li>⏰ Time Travel package (Danger Level 10)</li>
+                  <li>⚛️ Quantum Computing package (Danger Level 9)</li>
+                  <li>🌐 Online/offline package installation</li>
+                  <li>🔥 Enhanced bytecode VM with quantum operations</li>
                 </ul>
               </div>
             </div>

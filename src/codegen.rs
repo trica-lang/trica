@@ -23,10 +23,11 @@ impl CodeGenerator {
 
     pub fn generate(&mut self, program: &Program) -> Result<String, TricarError> {
         self.generate_header();
-        self.collect_string_literals(&program.main_block);
+        // BLAZING FAST CODEGEN - DIRECT STATEMENTS!
+        self.collect_string_literals_from_statements(&program.statements);
         self.generate_string_literals();
         self.generate_runtime_functions();
-        self.generate_main_function(&program.main_block)?;
+        self.generate_main_function_from_statements(&program.statements)?;
         Ok(self.output.clone())
     }
 
@@ -52,6 +53,13 @@ impl CodeGenerator {
 
     fn collect_string_literals(&mut self, main_block: &MainBlock) {
         for statement in &main_block.statements {
+            self.collect_strings_from_statement(statement);
+        }
+    }
+    
+    // BLAZING FAST - Direct statement collection
+    fn collect_string_literals_from_statements(&mut self, statements: &[Statement]) {
+        for statement in statements {
             self.collect_strings_from_statement(statement);
         }
     }
@@ -138,6 +146,19 @@ impl CodeGenerator {
         self.emit_line("int main(void) {");
         self.emit_line("    // Ultra-fast execution starts here");
         for statement in &main_block.statements {
+            self.generate_statement(statement)?;
+        }
+        self.emit_line("    if (trica_last_output != NULL) free(trica_last_output);");
+        self.emit_line("    return 0;");
+        self.emit_line("}");
+        Ok(())
+    }
+    
+    // BLAZING FAST - Direct statement generation
+    fn generate_main_function_from_statements(&mut self, statements: &[Statement]) -> Result<(), TricarError> {
+        self.emit_line("int main(void) {");
+        self.emit_line("    // BLAZING FAST execution starts here");
+        for statement in statements {
             self.generate_statement(statement)?;
         }
         self.emit_line("    if (trica_last_output != NULL) free(trica_last_output);");

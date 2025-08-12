@@ -4,7 +4,7 @@
 pub struct Program {
     pub includes: Vec<Include>,
     pub imports: Vec<Import>,
-    pub main_block: MainBlock,
+    pub statements: Vec<Statement>,  // DIRECT STATEMENTS - NO MAIN BLOCK!
 }
 
 #[derive(Debug, Clone, PartialEq)]

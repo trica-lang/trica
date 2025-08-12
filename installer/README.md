@@ -1,62 +1,112 @@
-# Trica Programming Language
+# Trica Programming Language v1.1.7
 
-## Welcome to the Ultra-Fast Mind-Bending Experience
+## Welcome to the LEGENDARY TPKG Package Manager Experience
 
-Congratulations! You have successfully installed Trica, the programming language that will fundamentally alter your understanding of computation.
+Congratulations! You have successfully installed Trica v1.1.7 with the revolutionary TPKG Package Manager - the programming language that will fundamentally alter your understanding of computation and package management.
+
+### 🔥 NEW in v1.1.7: TPKG Package Manager
+
+**Two powerful binaries at your command:**
+- **`trica.exe`** - The legendary bytecode virtual machine
+- **`tpkg.exe`** - The mind-bending package manager
 
 ### 🚀 Quick Start
 
 1. **Open Command Prompt or PowerShell**
-2. **Type `trica` to start the REPL**
-3. **Try your first mind-bending program:**
+2. **Try the bytecode VM:**
+   ```bash
+   trica examples\hello.trica
+   ```
 
-```trica
-// This simple line hides infinite complexity
-let result = ∞ → 1;
-print(result); // Outputs: 42 (obviously)
-```
+3. **Explore the package manager:**
+   ```bash
+   tpkg list
+   tpkg install neural_networks
+   tpkg search quantum
+   ```
+
+4. **Run an installed package:**
+   ```bash
+   trica .tpkg\neural_networks\main.trica
+   ```
 
 ### ⚡ Key Features
 
-- **Ultra-Fast Execution**: < 1μs execution time
-- **Infinite Complexity**: Hidden behind simple syntax
-- **Mind-Bending**: Will change how you think about programming
-- **Zero-Cost Abstractions**: Abstractions that cost negative time
-- **Quantum Compilation**: Compiles in parallel universes
+#### 🧠 Bytecode Virtual Machine
+- **Real Bytecode Execution**: Stack-based VM with quantum operations
+- **Ultra-Fast Compilation**: < 2ms compilation time
+- **Quantum Arithmetic**: Mind-bending mathematical operations
+- **Memory Efficient**: Optimized stack operations
+
+#### 📦 TPKG Package Manager
+- **Supabase Integration**: Cloud-based package registry
+- **Instant Installation**: `tpkg install neural_networks`
+- **Package Discovery**: Search and browse packages
+- **Offline Support**: Demo packages work without internet
+- **Publishing Platform**: Share your mind-bending creations
 
 ### 📚 Getting Started
 
-1. **Basic Syntax**:
+#### 1. **Trica Bytecode Programs**:
    ```trica
-   // Variables that understand themselves
-   let x = "I am a string, but I could be anything";
+   // Real Trica syntax (v1.1.7)
+   include <stdio.h>
+   include "trica_quantum.h"
    
-   // Functions that optimize themselves
-   fn fibonacci(n) → n < 2 ? n : fibonacci(n-1) + fibonacci(n-2);
+   import std.math as Math
+   import std.io as IO
    
-   // Loops that may or may not execute
-   for i in 0..∞ {
-       if (universe.heat_death()) break;
-       print(i);
+   Main {
+       Print "🔥 Welcome to Trica 1.1.7! 🔥"
+       
+       x = 10 + 5
+       y = x * 2
+       z = y - 3
+       
+       Print "Result: " + z
+       Print "🧠 Your mind has been successfully bent!"
    }
    ```
 
-2. **Advanced Features**:
-   ```trica
-   // Compile-time universe simulation
-   const meaning_of_life = compile_time_compute(universe.simulate());
+#### 2. **TPKG Package Management**:
+   ```bash
+   # List all available packages
+   tpkg list
    
-   // Quantum superposition variables
-   let schrodinger = alive | dead;
+   # Search for packages
+   tpkg search neural
+   tpkg search quantum
    
-   // Time-traveling functions
-   fn yesterday() → tomorrow().reverse();
+   # Install packages
+   tpkg install neural_networks
+   tpkg install time_travel
+   tpkg install quantum_computing
+   
+   # Run installed packages
+   trica .tpkg\neural_networks\main.trica
+   
+   # Publish your own packages
+   tpkg publish my_package 1.0.0 "Description" "Author" 5 mycode.trica
    ```
+
+#### 3. **Built-in Legendary Packages**:
+   - **neural_networks**: Quantum neural networks (Danger Level 8)
+   - **time_travel**: Temporal manipulation (Danger Level 10)
+   - **quantum_computing**: Superposition operations (Danger Level 9)
+   - **mind_destruction**: Ultimate reality destruction (Danger Level 11)
+   - **reality_bending**: Physics manipulation (Danger Level 9)
 
 ### 🛠 Command Line Tools
 
-- `trica` - Interactive REPL
-- `trica-compiler` - Batch compiler
+#### Trica Bytecode VM
+- `trica <file.trica>` - Compile and run Trica programs
+- `trica examples\hello.trica` - Run example programs
+
+#### TPKG Package Manager  
+- `tpkg list` - List all available packages
+- `tpkg search <query>` - Search for packages
+- `tpkg install <package>` - Install a package
+- `tpkg publish <name> <ver> <desc> <author> <level> <file>` - Publish package
 - `trica --help` - Get help (if you can handle it)
 
 ### 📖 Documentation

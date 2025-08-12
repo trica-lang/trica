@@ -89,7 +89,7 @@ Main {
             <p className="hero-description">
               Experience the programming language that will <strong>physically destroy your mind</strong> with its 
               deceptively simple syntax hiding <em>infinite algorithmic complexity</em>. 
-              <strong>NEW in 1.0.0:</strong> Real bytecode VM with quantum superposition and time travel!
+              <strong>NEW in 1.1.7:</strong> TPKG Package Manager with Supabase integration!
             </p>
 
             <div className="hero-stats">
@@ -115,12 +115,12 @@ Main {
 
             <div className="hero-actions">
               <a 
-                href="/installer/TricaSetup-1.0.0.exe"
+                href="/installer/TricaSetup-1.1.7.exe"
                 className="btn btn-primary"
                 download
               >
                 <DownloadIcon size={18} />
-                Download 1.0.0 Bytecode VM (200 KB)
+                Download 1.1.7 + TPKG (1.2 MB)
               </a>
               <button 
                 className="btn btn-secondary"

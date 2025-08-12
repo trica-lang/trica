@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Square, RotateCcw, Download, Copy, Sparkles, Zap, Brain } from 'lucide-react';
+import InkflowContent from './InkflowContent';
 import './TryOnline.css';
 
 const TryOnline = () => {
@@ -330,7 +331,7 @@ Main {
           </button>
           
           <a 
-            href="/installer/TricaSetup-0.1.0.exe"
+            href="/installer/TricaSetup-1.1.7.exe"
             className="btn btn-ghost"
             download
           >
@@ -339,11 +340,20 @@ Main {
           </a>
         </div>
 
+        <InkflowContent 
+          code={code} 
+          title="TRICA Online Code"
+          onSave={(result) => {
+            console.log('Code saved to INKFLOW:', result);
+            // You could show a success notification here
+          }}
+        />
+
         <div className="repl-footer">
           <div className="footer-note">
             <p>
               <strong>Note:</strong> This is a simulated Trica environment for demonstration. 
-              The actual Trica compiler generates ultra-optimized C code with &lt;1μs execution time.
+              The actual Trica 1.1.7 features real bytecode VM execution + TPKG Package Manager with neural networks, time travel, and quantum computing packages!
             </p>
           </div>
         </div>
